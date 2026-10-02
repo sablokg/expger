@@ -1,0 +1,18 @@
+[package]
+name = "expger"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["Gaurav Sablok"]
+description = "deep learning for gene expression"
+homepage = "https://codeberg.org/gsablok/expger"
+repository = "https://codeberg.org/gsablok/expger"
+keywords = ["bioinformatics","genomics","computational"]
+
+[dependencies]
+clap = { version = "4.6.5", features = ["derive"] }
+burn = { version = "0.19.1", features = ["ndarray", "autodiff"] }
+figlet-rs = "0.1.5"
+tokio = { version = "1.53.1", features = ["full"] }
+smartcore = { version = "0.5.5", features = ["ndarray-bindings"] }
+xgb = "3.0.5"
